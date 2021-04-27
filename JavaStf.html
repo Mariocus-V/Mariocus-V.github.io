@@ -1,0 +1,74 @@
+<html>
+	<head>
+		
+		<meta charset="utf-8">
+		
+		<script>
+			
+			function fff(){document.getElementById('download.jpg')}
+			
+			function down(obj){
+			obj.style.backgroundColor="red";
+			obj.innerHTML = "( ͡° ͜ʖ ͡°)";
+			}
+			
+			function up(obj){
+			obj.style.backgroundColor="green";
+			obj.innerHTML = "⠀⠀l:";
+			}
+			
+			function myFunction(){
+			document.write("Welcome to my page" + "<br>")
+			document.write("This is JavaScript!<br>")
+			};
+			
+			function thought(who) {
+
+			alert("Why is " + who + "?");
+			};
+
+			function change(color) {
+			document.bgColor=color;
+			};
+			
+			
+
+			thought("Gamora");
+			
+			myFunction();
+			myFunction();
+			fff();
+		</script>
+		
+
+	</head>
+	<body>
+
+		<button type="button" name="Guy" onClick="alert('You clicked the button!');">Click Me Please!</button>
+		
+		<button type="button" name="button" onclick="myFunction(); alert('Haha, gottem.')">Click Me!</button>
+		
+		<button type="button" name="button"onclick="change('blue');">Click for BLUE!</button>
+		
+		<br>
+		<br>
+		
+		<div onmousedown = "down(this)" onmouseup = "up(this)" style="width:20%; height:30px; padding:5px; background-color:green; color:purple; font-weight:bold;">
+		
+			Stuff and things
+		
+		</div>
+		
+		<br>
+		<br>
+		<div style="background-color:yellow; width:20%;" onmouseover="alert('woot it worked')"><h1>Hey</h1></div>
+		
+		<br>
+		
+		<button onclick="document.getElementById('myImage').src = 'KoigiWawamwere-260x145.png'">Go!</button>
+		<img id="myImage" src="KoigiWawamwere-260x145.png" alt="cool dude">
+		<button onclick="document.getElementById('myImage').src = 'download.jpg'">Stop!</button>
+
+	</body>
+</html>
+
